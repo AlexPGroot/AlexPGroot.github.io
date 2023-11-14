@@ -1,0 +1,6 @@
+index
+cv
+r-markdown
+looking-ahead
+r-markdown-1
+including-plots

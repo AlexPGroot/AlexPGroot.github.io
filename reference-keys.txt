@@ -1,6 +1,11 @@
 index
 cv
-r-markdown
 looking-ahead
-r-markdown-1
-including-plots
+guerilla-analytics
+c-elegans
+open-peer-review
+assignment
+relational-databases
+r-package
+zotero
+parameterized-report

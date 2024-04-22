@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>4 Guerilla analytics | index</title>
-  <meta name="description" content="4 Guerilla analytics | index" />
+  <title>4 Guerrilla analytics | index</title>
+  <meta name="description" content="4 Guerrilla analytics | index" />
   <meta name="generator" content="bookdown 0.38 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="4 Guerilla analytics | index" />
+  <meta property="og:title" content="4 Guerrilla analytics | index" />
   <meta property="og:type" content="book" />
   
   
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="4 Guerilla analytics | index" />
+  <meta name="twitter:title" content="4 Guerrilla analytics | index" />
   
   
   
@@ -75,7 +75,7 @@
 <li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Index</a></li>
 <li class="chapter" data-level="2" data-path="cv.html"><a href="cv.html"><i class="fa fa-check"></i><b>2</b> CV</a></li>
 <li class="chapter" data-level="3" data-path="looking-ahead.html"><a href="looking-ahead.html"><i class="fa fa-check"></i><b>3</b> Looking ahead</a></li>
-<li class="chapter" data-level="4" data-path="guerilla-analytics.html"><a href="guerilla-analytics.html"><i class="fa fa-check"></i><b>4</b> Guerilla analytics</a></li>
+<li class="chapter" data-level="4" data-path="guerrilla-analytics.html"><a href="guerrilla-analytics.html"><i class="fa fa-check"></i><b>4</b> Guerrilla analytics</a></li>
 <li class="chapter" data-level="5" data-path="c-elegans.html"><a href="c-elegans.html"><i class="fa fa-check"></i><b>5</b> C elegans</a></li>
 <li class="chapter" data-level="6" data-path="open-peer-review.html"><a href="open-peer-review.html"><i class="fa fa-check"></i><b>6</b> Open peer review</a>
 <ul>
@@ -102,19 +102,13 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="guerilla-analytics" class="section level1 hasAnchor" number="4">
-<h1><span class="header-section-number">4</span> Guerilla analytics<a href="guerilla-analytics.html#guerilla-analytics" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="guerrilla-analytics" class="section level1 hasAnchor" number="4">
+<h1><span class="header-section-number">4</span> Guerrilla analytics<a href="guerrilla-analytics.html#guerrilla-analytics" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <p>Guerrilla Analytics is data analytics performed in a very dynamic project environment that presents the team with varied and frequent disruptions and constrains the team in terms of the resources they can bring to bear on their analytics problem. <br>
 From: <a href="https://www.sciencedirect.com/science/article/abs/pii/B9780128002186000011">Guerrilla Analytics, 2015</a></p>
-<p>Applying the Guerrilla analytics framework to your own project. <br></p>
-<p>Look at your RStudio project that you created for the DAUR-II assignments
-download your folders (not the HUGE datafiles and kraken-database!) and rearrange your project according the Guerilla principles explained above
-for the data… folders: provide only a readme.txt with alle the info you would normally put there + where the data is stored
-Provide study documentation and meta data.
-Use the {fs} package to share a screenshot of your folder tree in your portfolio, look at: for more info on how to use the {fs} package.
-hint: you had 3 datasets within the RNAseq project, one of them being the exam project, and 2 datasets within the metagenomics project.</p>
-<p>Now clean up your work environment for this course (workflows) and the parallel course in DSFB2 (projecticum). Set up a folder structure that will accomodate future plans and collaboration on the projecticum. Provide readme-files or comments within the code where needed.
-For the projecticum folder, make sure you do this together with your lab partner.</p>
+<p><br>Data science projects can get big, and keeping all files and folders tidy makes sure that it will stay possible to go through all the files and see how the analyses are performed. Keeping a well managed structure also allows for easier reproduction of the performed analyses when the folders are sent to other data scientist.
+<br>
+<br>First we take a look at what a general folder structure might look like after a few weeks of assignments:</p>
 <style type="text/css">
 .FixedHeightContainer
 {
@@ -506,13 +500,16 @@ Old folder structure:
 └── Steve.csv <br></p>
 </div>
 </div>
-<p><br>
 <br>
-As you can see, the original file structure used during the earlier data science course is a complete mess.
+<br>
+As you can see, the original file structure used during the earlier data science course is quite the mess.
 Instead we now make usage of the Guerilla analytics framework to store data and manage files.
-Using simple structures to store data, code, generated graphs and makes it easier to use and replicate analyses, even years after the analyses are performed.</p>
-<p>Making sure all files in a environment pertain only to that single project is important. And to make data storage simple, a central data folder in the root of the enviornment is used with clear naming conventions, dates and versions. Also metadata files are used to allow anyone with access to the project to see what the contents of the project are.</p>
-<p>Here is the above file structure, with the guerilla analytics framework applied:</p>
+Using simple structures to store data, code, generated graphs and makes it easier to use and replicate analyses, even years after the analyses are performed.
+<br>
+Making sure all files in a environment pertain only to that single project is important. And to make data storage simple, a central data folder in the root of the enviornment is used with clear naming conventions, dates and versions. Also metadata files are used to allow anyone with access to the project to see what the contents of the project are.
+<br>
+<br>Here is the above file structure, with the guerilla analytics framework <b>retroactively </b>applied:
+<br>
 <div class="FixedHeightContainer">
 <h3>
 New folder structure:
@@ -673,9 +670,12 @@ New folder structure:
 </div>
 <p><br>
 <br>
-This still isnt the best and most clear way to display these files, though.
-I retroactively moved files, which is something one should never do due to loss of data/files and breaking of code and scripts, to re-arrange them according to the Guerilla analytics framework. The biggest issue with this is that it has been a while since I last interacted with these files and as such a lot of the context surrounding these files is lost. Therefore many of the data files have been moved to folders based on their extension, but without thinking what project it belongs to or code it interacts with. One of the results being a large “unsorted” folder within the raw data folder.</p>
-<p>The conclusion from this exercise is the first principle of the guerilla analytics framework; storage is cheap, confusion is expensive. Going through all this data retroactively and trying to make sense of it all would be a huge task taking up a lot of time. It is best to start from the beginning with the framework in mind and that is what has been done with this portfolio, results here:</p>
+In order to have the folder structured in the Guerrilla analytics framework method, I retroactively moved the files.
+This is just used as an example to show what a tidier and better organized structure might look like.
+The big problem with this is that it <b>will </b> break many, if not all, of the scripts inside due to changing of file paths.</p>
+<p>The best way to keep files well-managed is to set up a file structure before starting and sticking to it. Keeping a folder with all the raw data with its names the way they were obtained makes sure confusion is kept to a minimum when the data is looked at. Creating seperate data folders enables to track transformed data while preserving the raw data.</p>
+<p>And keeping metadata files in all the folders that explain not just folder structure, but importantly also file naming conventions and potentially used abbreviations for them will mean that even years later someone will be able to look at the project and learn what is inside.</p>
+<p>This portfolio was made with the Guerrilla analytics framework in mind from the start:</p>
 
 </div>
             </section>

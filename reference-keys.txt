@@ -9,3 +9,4 @@ relational-databases
 r-package
 zotero
 parameterized-report
+guerrilla-analytics

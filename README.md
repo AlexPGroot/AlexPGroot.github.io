@@ -1,1 +1,1 @@
-[Link to Github Pages](AlexPGroot.github.io)
+[Link to pages](https://alexpgroot.github.io)

@@ -1,0 +1,10 @@
+index
+cv
+looking-ahead
+guerrilla-analytics
+c-elegans
+open-peer-review
+relational-databases
+r-package
+zotero
+parameterized-report

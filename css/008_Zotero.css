@@ -1,0 +1,12 @@
+div.paper {
+  font-family: "Times New Roman", Times, serif;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  text-align: left;
+}
+
+.references {
+  font-size: 0.9em;
+}

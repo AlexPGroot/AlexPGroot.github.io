@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Alex Groot">
+<meta name="dcterms.date" content="2024-12-08">
 
-<title>404 – AlexPGroot</title>
+<title>Developing an automated workflow to analyze differential gene expression in cells through long-read Nanopore RNA sequencing – AlexPGroot</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -54,25 +56,45 @@ div.sourceCode
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
-<script src="/site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="/site_libs/quarto-nav/headroom.min.js"></script>
-<script src="/site_libs/clipboard/clipboard.min.js"></script>
-<script src="/site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="/site_libs/quarto-search/fuse.min.js"></script>
-<script src="/site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="/">
-<script src="/site_libs/quarto-html/quarto.js"></script>
-<script src="/site_libs/quarto-html/popper.min.js"></script>
-<script src="/site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="/site_libs/quarto-html/anchor.min.js"></script>
-<link href="/site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="/site_libs/quarto-html/quarto-syntax-highlighting-07ba0ad10f5680c660e360ac31d2f3b6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="/site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="/site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="/site_libs/bootstrap/bootstrap-96053bb5e0096401b36e991c1f57b7e4.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-07ba0ad10f5680c660e360ac31d2f3b6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-96053bb5e0096401b36e991c1f57b7e4.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -109,7 +131,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </style>
 
 
-<link rel="stylesheet" href="/styles.css">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="css/008_Zotero.css">
 </head>
 
 <body class="nav-sidebar floating nav-fixed">
@@ -119,7 +142,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="/index.html">
+    <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">AlexPGroot</span>
     </a>
   </div>
@@ -130,11 +153,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="/index.html" aria-current="page"> 
+    <a class="nav-link active" href="./index.html" aria-current="page"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="/projects.html"> 
+    <a class="nav-link" href="./projects.html"> 
 <span class="menu-text">Projects</span></a>
   </li>  
 </ul>
@@ -148,7 +171,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">404</li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./008_Zotero.html">RNAseq introduction</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -162,43 +185,43 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="/index.html" class="sidebar-item-text sidebar-link">
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Home</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="/projects.html" class="sidebar-item-text sidebar-link">
+  <a href="./projects.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Projects</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="/001_CV.html" class="sidebar-item-text sidebar-link">
+  <a href="./001_CV.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Curriculum Vitae</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="/002_Looking_ahead.html" class="sidebar-item-text sidebar-link">
+  <a href="./002_Looking_ahead.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Looking ahead</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="/003_Guerrilla_analytics_framework.html" class="sidebar-item-text sidebar-link">
+  <a href="./003_Guerrilla_analytics_framework.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Guerrilla analytics</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="/004_C_elegans.html" class="sidebar-item-text sidebar-link">
+  <a href="./004_C_elegans.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">C elegans analysis</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="/005_open_peer_review.html" class="sidebar-item-text sidebar-link">
+  <a href="./005_open_peer_review.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Open peer review</span></a>
   </div>
 </li>
@@ -210,19 +233,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="/008_Zotero.html" class="sidebar-item-text sidebar-link">
+  <a href="./008_Zotero.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">RNAseq introduction</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="/009_Parameterized_report.html" class="sidebar-item-text sidebar-link">
+  <a href="./009_Parameterized_report.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Parameterized report</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="/010_ML_Getting_started.html" class="sidebar-item-text sidebar-link">
+  <a href="./010_ML_Getting_started.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Getting started with machine learning</span></a>
   </div>
 </li>
@@ -238,21 +261,51 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <div class="quarto-code-links"><h2>Code Links</h2><ul><li><a href="https://github.com/AlexPGroot/AlexPGroot.github.io"><i class="bi bi-github"></i>Github</a></li></ul></div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a>
+  <ul class="collapse">
+  <li><a href="#rna-sequencing" id="toc-rna-sequencing" class="nav-link" data-scroll-target="#rna-sequencing">RNA-sequencing</a></li>
+  <li><a href="#microplastics" id="toc-microplastics" class="nav-link" data-scroll-target="#microplastics">Microplastics</a></li>
+  <li><a href="#aim-of-this-project" id="toc-aim-of-this-project" class="nav-link" data-scroll-target="#aim-of-this-project">Aim of this project</a></li>
+  </ul></li>
+  </ul>
+<div class="quarto-code-links"><h2>Code Links</h2><ul><li><a href="https://github.com/AlexPGroot/AlexPGroot.github.io"><i class="bi bi-github"></i>Github</a></li></ul></div></nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title">404</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+<div class="quarto-title-block"><div><h1 class="title">Developing an automated workflow to analyze differential gene expression in cells through long-read Nanopore RNA sequencing</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
 </div>
 
 
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Author</div>
+  <div class="quarto-title-meta-heading">Affiliation</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">Alex Groot <a href="mailto:alex_groot@icloud.com" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Hogeschool Utrecht
+          </p>
+      </div>
+  </div>
 
 <div class="quarto-title-meta">
 
-    
+      
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">December 8, 2024</p>
+    </div>
+  </div>
   
     
   </div>
@@ -262,22 +315,62 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>Return to <a href="/./index.html"> Home </a></p>
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="/404_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid figure-img" width="672"></p>
-</figure>
-</div>
-</div>
-</div>
+<section id="introduction" class="level1">
+<h1>Introduction</h1>
+<section id="rna-sequencing" class="level2">
+<h2 class="anchored" data-anchor-id="rna-sequencing">RNA-sequencing</h2>
+<p>RNA sequencing (RNA-Seq) technology has, since its inception shortly after next-generation sequencing (NGS), made large advancements in our ability to study the transcriptome <span class="citation" data-cites="weberDiscoveringNewBiology2015">(<a href="#ref-weberDiscoveringNewBiology2015" role="doc-biblioref">Weber 2015</a>)</span>. Long-read RNA-Sequencing technology, such as the Nanopore MinION, enables us to analyze full-length transcripts over short read RNA-Seq data. While very potent, short-read RNA-Seq has its drawbacks due to its short nature, such as when high amounts of repeating sequences are involved and the challenges in overlapping regions <span class="citation" data-cites="vandijkThirdRevolutionSequencing2018">(<a href="#ref-vandijkThirdRevolutionSequencing2018" role="doc-biblioref">van Dijk et al. 2018</a>)</span>. As full-length isoforms are lost due to the fragmenting nature of short-read RNA-Seq, we can instead turn to long-read RNA-Seq. While this technology can suffer from lower throughput and accuracy, it does allow us to directly sequence native RNA sequences. <span class="citation" data-cites="amentLongreadRNASequencing2024">(<a href="#ref-amentLongreadRNASequencing2024" role="doc-biblioref">Ament et al. 2024</a>)</span>. With this versatile tool we can analyze the effects of the exposure of human cells to environmental contaminants, such as microplastics (MPs).</p>
+</section>
+<section id="microplastics" class="level2">
+<h2 class="anchored" data-anchor-id="microplastics">Microplastics</h2>
+<p>Over the past decade we have gone from detecting and identifying MPs in marine habitats and oceans worldwide <span class="citation" data-cites="thompsonLostSeaWhere2004">(<a href="#ref-thompsonLostSeaWhere2004" role="doc-biblioref">Thompson et al. 2004</a>)</span> to analyzing human samples and finding them in large groups of people everywhere such as in testicles <span class="citation" data-cites="zhaoDetectionCharacterizationMicroplastics2023">(<a href="#ref-zhaoDetectionCharacterizationMicroplastics2023" role="doc-biblioref">Zhao et al. 2023</a>)</span>, breastmilk <span class="citation" data-cites="saraluckDetectionMicroplasticsHuman2024">(<a href="#ref-saraluckDetectionMicroplasticsHuman2024" role="doc-biblioref">Saraluck et al. 2024</a>)</span>, placenta <span class="citation" data-cites="ragusaPlasticentaFirstEvidence2021">(<a href="#ref-ragusaPlasticentaFirstEvidence2021" role="doc-biblioref">Ragusa et al. 2021</a>)</span>, liver <span class="citation" data-cites="barceloMicroplasticsDetectionHuman2023">(<a href="#ref-barceloMicroplasticsDetectionHuman2023" role="doc-biblioref">Barceló, Picó, and Alfarhan 2023</a>)</span> and respiratory systems <span class="citation" data-cites="amato-lourencoPresenceAirborneMicroplastics2021">(<a href="#ref-amato-lourencoPresenceAirborneMicroplastics2021" role="doc-biblioref">Amato-Lourenço et al. 2021</a>)</span>. Since then there has been increasingly more research regarding the topic as evidenced by numerous publications exploring the many routes of exposure and their pathways of MP toxicity. And while it is observed that high concentrations of MPs can cause inflammatory lesions, and may be a factor in the increasing incidence of neurodegenerative diseases, immune disorders and cancers <span class="citation" data-cites="prataEnvironmentalExposureMicroplastics2020">(<a href="#ref-prataEnvironmentalExposureMicroplastics2020" role="doc-biblioref">Prata et al. 2020</a>)</span>, the interactions and long-term effects require more studies as they are not yet fully understood. One such pathway is the gene expression, <span class="citation" data-cites="leiMicroplasticParticlesCause2018">Lei et al. (<a href="#ref-leiMicroplasticParticlesCause2018" role="doc-biblioref">2018</a>)</span> found that the exposing zebrafish Danio Rerio and nematode Caenorhabditis elegans to MPs caused the intestine to have reduced calcium levels and increased expression of gluthathione S-transferase which indicated intestinal damage and oxidative stress.</p>
+</section>
+<section id="aim-of-this-project" class="level2">
+<h2 class="anchored" data-anchor-id="aim-of-this-project">Aim of this project</h2>
+<p>In order to better understand the biological effect of MPs we aim to utilize long-read RNA-Seq analyses, facilitated by the Oxford Nanopore MinION, to explore the impact on human gene expression to analyze potential downstream health issues. By developing an automated data science workflow which makes use of minimap2, bambu and DESeq2 for discovery, quantification and differential gene expression we aim to provide a workflow that serves as a foundation for our research and a potential foundation for more reproducible data analyses in the future.</p>
 
 
 <!-- -->
 
 
-</main> <!-- /main -->
+</section>
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-amato-lourencoPresenceAirborneMicroplastics2021" class="csl-entry" role="listitem">
+Amato-Lourenço, Luís Fernando, Regiani Carvalho-Oliveira, Gabriel Ribeiro Júnior, Luciana dos Santos Galvão, Rômulo Augusto Ando, and Thais Mauad. 2021. <span>“Presence of Airborne Microplastics in Human Lung Tissue.”</span> <em>Journal of Hazardous Materials</em> 416 (August): 126124. <a href="https://doi.org/10.1016/j.jhazmat.2021.126124">https://doi.org/10.1016/j.jhazmat.2021.126124</a>.
+</div>
+<div id="ref-amentLongreadRNASequencing2024" class="csl-entry" role="listitem">
+Ament, Isabelle Heifetz, Nicole DeBruyne, Feng Wang, and Lan Lin. 2024. <span>“Long-Read <span>RNA</span> Sequencing: A Transformative Technology for Exploring Transcriptome Complexity in Human Diseases.”</span> <em>Molecular Therapy</em>, November. <a href="https://doi.org/10.1016/j.ymthe.2024.11.025">https://doi.org/10.1016/j.ymthe.2024.11.025</a>.
+</div>
+<div id="ref-barceloMicroplasticsDetectionHuman2023" class="csl-entry" role="listitem">
+Barceló, Damià, Yolanda Picó, and Ahmed H. Alfarhan. 2023. <span>“Microplastics: <span>Detection</span> in Human Samples, Cell Line Studies, and Health Impacts.”</span> <em>Environmental Toxicology and Pharmacology</em> 101 (August): 104204. <a href="https://doi.org/10.1016/j.etap.2023.104204">https://doi.org/10.1016/j.etap.2023.104204</a>.
+</div>
+<div id="ref-vandijkThirdRevolutionSequencing2018" class="csl-entry" role="listitem">
+Dijk, Erwin L. van, Yan Jaszczyszyn, Delphine Naquin, and Claude Thermes. 2018. <span>“The <span>Third Revolution</span> in <span>Sequencing Technology</span>.”</span> <em>Trends in Genetics</em> 34 (9): 666–81. <a href="https://doi.org/10.1016/j.tig.2018.05.008">https://doi.org/10.1016/j.tig.2018.05.008</a>.
+</div>
+<div id="ref-leiMicroplasticParticlesCause2018" class="csl-entry" role="listitem">
+Lei, Lili, Siyu Wu, Shibo Lu, Mengting Liu, Yang Song, Zhenhuan Fu, Huahong Shi, Kathleen M. Raley-Susman, and Defu He. 2018. <span>“Microplastic Particles Cause Intestinal Damage and Other Adverse Effects in Zebrafish <span><em>Danio</em></span><span> <em>Rerio</em></span> and Nematode <span><em>Caenorhabditis</em></span><span> <em>Elegans</em></span>.”</span> <em>Science of The Total Environment</em> 619–620 (April): 1–8. <a href="https://doi.org/10.1016/j.scitotenv.2017.11.103">https://doi.org/10.1016/j.scitotenv.2017.11.103</a>.
+</div>
+<div id="ref-prataEnvironmentalExposureMicroplastics2020" class="csl-entry" role="listitem">
+Prata, Joana Correia, João P. da Costa, Isabel Lopes, Armando C. Duarte, and Teresa Rocha-Santos. 2020. <span>“Environmental Exposure to Microplastics: <span>An</span> Overview on Possible Human Health Effects.”</span> <em>Science of The Total Environment</em> 702 (February): 134455. <a href="https://doi.org/10.1016/j.scitotenv.2019.134455">https://doi.org/10.1016/j.scitotenv.2019.134455</a>.
+</div>
+<div id="ref-ragusaPlasticentaFirstEvidence2021" class="csl-entry" role="listitem">
+Ragusa, Antonio, Alessandro Svelato, Criselda Santacroce, Piera Catalano, Valentina Notarstefano, Oliana Carnevali, Fabrizio Papa, et al. 2021. <span>“Plasticenta: <span>First</span> Evidence of Microplastics in Human Placenta.”</span> <em>Environment International</em> 146 (January): 106274. <a href="https://doi.org/10.1016/j.envint.2020.106274">https://doi.org/10.1016/j.envint.2020.106274</a>.
+</div>
+<div id="ref-saraluckDetectionMicroplasticsHuman2024" class="csl-entry" role="listitem">
+Saraluck, Apisith, Tachpon Techarang, Phattarika Bunyapipat, Khununya Boonchuwong, Yupparase Pullaput, and Auemphon Mordmuang. 2024. <span>“Detection of <span>Microplastics</span> in <span>Human Breast Milk</span> and <span>Its Association</span> with <span>Changes</span> in <span>Human Milk Bacterial Microbiota</span>.”</span> <em>Journal of Clinical Medicine</em> 13 (14): 4029. <a href="https://doi.org/10.3390/jcm13144029">https://doi.org/10.3390/jcm13144029</a>.
+</div>
+<div id="ref-thompsonLostSeaWhere2004" class="csl-entry" role="listitem">
+Thompson, Richard C., Ylva Olsen, Richard P. Mitchell, Anthony Davis, Steven J. Rowland, Anthony W. G. John, Daniel McGonigle, and Andrea E. Russell. 2004. <span>“Lost at <span>Sea</span>: <span>Where Is All</span> the <span>Plastic</span>?”</span> <em>Science</em> 304 (5672): 838–38. <a href="https://doi.org/10.1126/science.1094559">https://doi.org/10.1126/science.1094559</a>.
+</div>
+<div id="ref-weberDiscoveringNewBiology2015" class="csl-entry" role="listitem">
+Weber, Andreas P. M. 2015. <span>“Discovering <span>New Biology</span> Through <span>Sequencing</span> of <span>RNA1</span>.”</span> <em>Plant Physiology</em> 169 (3): 1524–31. <a href="https://doi.org/10.1104/pp.15.01081">https://doi.org/10.1104/pp.15.01081</a>.
+</div>
+<div id="ref-zhaoDetectionCharacterizationMicroplastics2023" class="csl-entry" role="listitem">
+Zhao, Qiancheng, Long Zhu, Jiaming Weng, Zirun Jin, Yalei Cao, Hui Jiang, and Zhe Zhang. 2023. <span>“Detection and Characterization of Microplastics in the Human Testis and Semen.”</span> <em>Science of The Total Environment</em> 877 (June): 162713. <a href="https://doi.org/10.1016/j.scitotenv.2023.162713">https://doi.org/10.1016/j.scitotenv.2023.162713</a>.
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -750,37 +843,38 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
 <div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "404"</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="an">format:</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co">  html</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>Return to &lt;a href="/index.qmd"&gt; Home &lt;/a&gt;</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: false</span></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="co">#| warning: false</span></span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="co"># Coords</span></span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>number_data <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>  <span class="at">x =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">2</span>, <span class="dv">2</span>, <span class="dv">2</span>, <span class="cn">NA</span>, <span class="co"># 4</span></span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>        <span class="dv">5</span>, <span class="dv">7</span>, <span class="dv">7</span>, <span class="dv">5</span>, <span class="dv">5</span>, <span class="cn">NA</span>, <span class="co"># 0</span></span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>        <span class="dv">10</span>, <span class="dv">10</span>, <span class="dv">12</span>, <span class="dv">12</span>, <span class="dv">12</span>), <span class="co"># 4</span></span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>  <span class="at">y =</span> <span class="fu">c</span>(<span class="dv">4</span>, <span class="dv">2</span>, <span class="dv">2</span>, <span class="dv">4</span>, <span class="dv">0</span>, <span class="cn">NA</span>, <span class="co"># 4</span></span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>        <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">4</span>, <span class="dv">4</span>, <span class="dv">0</span>, <span class="cn">NA</span>,  <span class="co"># 0</span></span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>        <span class="dv">4</span>, <span class="dv">2</span>, <span class="dv">2</span>, <span class="dv">4</span>, <span class="dv">0</span>), <span class="co"># 4</span></span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>  <span class="at">group =</span> <span class="fu">rep</span>(<span class="fu">c</span>(<span class="st">"4"</span>, <span class="st">"0"</span>, <span class="st">"4"</span>), <span class="at">times =</span> <span class="fu">c</span>(<span class="dv">6</span>, <span class="dv">6</span>, <span class="dv">5</span>))</span>
-<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(number_data, <span class="fu">aes</span>(x, y, <span class="at">group =</span> group)) <span class="sc">+</span></span>
-<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_path</span>(<span class="at">size =</span> <span class="fl">2.5</span>, <span class="at">color =</span> <span class="st">"orange"</span>, <span class="at">lineend =</span> <span class="st">"round"</span>) <span class="sc">+</span>  </span>
-<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
-<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(</span>
-<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>    <span class="at">plot.title =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">18</span>, <span class="at">face =</span> <span class="st">"bold"</span>, <span class="at">hjust =</span> <span class="fl">0.5</span>)</span>
-<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
-<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Page not found"</span>)</span>
-<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Developing an automated workflow to analyze differential gene expression in cells through long-read Nanopore RNA sequencing"</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="an">bibliography:</span><span class="co"> references/008_nanopore.bib</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="an">bibliographystyle:</span><span class="co"> apa</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="an">author:</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co">  - name: "Alex Groot"</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co">    affiliation: "Hogeschool Utrecht"</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co">    email: "alex_groot@icloud.com"</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> "2024-12-08"</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="an">format:</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="co">  html:</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="co">    journal: elsevier</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="co">    toc: true</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="co">    css: css/008_Zotero.css</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: false</span></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: false</span></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>rbbt<span class="sc">::</span><span class="fu">bbt_update_bib</span>(<span class="at">path_rmd =</span> <span class="st">"008_Zotero.qmd"</span>, <span class="at">path_bib =</span> <span class="st">"references/008_nanopore.bib"</span>)</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="fu"># Introduction</span></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a><span class="fu">## RNA-sequencing</span></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>RNA sequencing (RNA-Seq) technology has, since its inception shortly after next-generation sequencing (NGS), made large advancements in our ability to study the transcriptome <span class="co">[</span><span class="ot">@weberDiscoveringNewBiology2015</span><span class="co">]</span>. Long-read RNA-Sequencing technology, such as the Nanopore MinION, enables us to analyze full-length transcripts over short read RNA-Seq data. While very potent, short-read RNA-Seq has its drawbacks due to its short nature, such as when high amounts of repeating sequences are involved and the challenges in overlapping regions   <span class="co">[</span><span class="ot">@vandijkThirdRevolutionSequencing2018</span><span class="co">]</span>. As full-length isoforms are lost due to the fragmenting nature of short-read RNA-Seq, we can instead turn to long-read RNA-Seq. While this technology can suffer from lower throughput and accuracy, it does allow us to directly sequence native RNA sequences.  <span class="co">[</span><span class="ot">@amentLongreadRNASequencing2024</span><span class="co">]</span>.</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>With this versatile tool we can analyze the effects of the exposure of human cells to environmental contaminants, such as microplastics (MPs).</span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a><span class="fu">## Microplastics</span></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>Over the past decade we have gone from detecting and identifying MPs in marine habitats and oceans worldwide  <span class="co">[</span><span class="ot">@thompsonLostSeaWhere2004</span><span class="co">]</span> to analyzing human samples and finding them in large groups of people everywhere such as in testicles <span class="co">[</span><span class="ot">@zhaoDetectionCharacterizationMicroplastics2023</span><span class="co">]</span>, breastmilk <span class="co">[</span><span class="ot">@saraluckDetectionMicroplasticsHuman2024</span><span class="co">]</span>, placenta <span class="co">[</span><span class="ot">@ragusaPlasticentaFirstEvidence2021</span><span class="co">]</span>, liver <span class="co">[</span><span class="ot">@barceloMicroplasticsDetectionHuman2023</span><span class="co">]</span> and respiratory systems <span class="co">[</span><span class="ot">@amato-lourencoPresenceAirborneMicroplastics2021</span><span class="co">]</span>. Since then there has been increasingly more research regarding the topic as evidenced by numerous publications exploring the many routes of exposure and their pathways of MP toxicity. And while it is observed that high concentrations of MPs can cause inflammatory lesions, and may be a factor in the increasing incidence of neurodegenerative diseases, immune disorders and cancers    <span class="co">[</span><span class="ot">@prataEnvironmentalExposureMicroplastics2020</span><span class="co">]</span>, the interactions and long-term effects require more studies as they are not yet fully understood. One such pathway is the gene expression, @leiMicroplasticParticlesCause2018 found that the exposing zebrafish Danio Rerio and nematode Caenorhabditis elegans to MPs caused the intestine to have reduced calcium levels and increased expression of gluthathione S-transferase which indicated intestinal damage and oxidative stress.</span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a><span class="fu">## Aim of this project</span></span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>In order to better understand the biological effect of MPs we aim to utilize long-read RNA-Seq analyses, facilitated by the Oxford Nanopore MinION, to explore the impact on human gene expression to analyze potential downstream health issues. By developing an automated data science workflow which makes use of minimap2, bambu and DESeq2 for discovery, quantification and differential gene expression we aim to provide a workflow that serves as a foundation for our research and a potential foundation for more reproducible data analyses in the future.</span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a></span>
 </code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->

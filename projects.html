@@ -250,13 +250,7 @@ window.Quarto = {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./vitae/vitae.pdf" class="sidebar-item-text sidebar-link">
- <span class="menu-text">CV_2</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./001_CV.html" class="sidebar-item-text sidebar-link">
+  <a href="./vitae/vitae.pdf" class="sidebar-item-text sidebar-link" target="_blank">
  <span class="menu-text">Curriculum Vitae</span></a>
   </div>
 </li>
@@ -443,9 +437,9 @@ window.Quarto = {
     
       <div class="card border-2 rounded-3 g-col-12 g-col-sm-6 g-col-md-4 mb-2">
         <div class="card-header py-1 px-2 bg-light">
-          <a href="./001_CV.html" class="listing-title">Curriculum Vitae</a>
+          <a href="./vitae/vitae.pdf" class="listing-title">Curriculum Vitae</a>
         </div>
-        <a href="./001_CV.html">
+        <a href="./vitae/vitae.pdf">
           <img src="./images/projects/rlogo.png" alt="Curriculum Vitae" class="card-img-top">
         </a>
       </div>
@@ -984,31 +978,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a><span class="co">            thumbnail: /images/projects/rlogo.png</span></span>
 <span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a><span class="co">            title: "Looking Ahead"</span></span>
 <span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a><span class="co">          - href: /001_CV.qmd</span></span>
-<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a><span class="co">            thumbnail: /images/projects/rlogo.png</span></span>
-<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a><span class="co">            title: "Curriculum Vitae"</span></span>
-<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: false</span></span>
-<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: false</span></span>
-<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a><span class="co"># template</span></span>
-<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a>categories<span class="sc">:</span></span>
-<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a>  R</span>
-<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a>template<span class="sc">:</span></span>
-<span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a> <span class="sc">-</span> category<span class="sc">:</span> <span class="st">"R Projects"</span></span>
-<span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a>        description<span class="sc">:</span> <span class="st">"Projects related to R programming."</span></span>
-<span id="cb1-75"><a href="#cb1-75" aria-hidden="true" tabindex="-1"></a>        tiles<span class="sc">:</span></span>
-<span id="cb1-76"><a href="#cb1-76" aria-hidden="true" tabindex="-1"></a>          <span class="sc">-</span> href<span class="sc">:</span> <span class="er">/</span><span class="dv">001</span>_CV.qmd</span>
-<span id="cb1-77"><a href="#cb1-77" aria-hidden="true" tabindex="-1"></a>            thumbnail<span class="sc">:</span> <span class="er">/</span>images<span class="sc">/</span>projects<span class="sc">/</span>celegans.jpg</span>
-<span id="cb1-78"><a href="#cb1-78" aria-hidden="true" tabindex="-1"></a>            title<span class="sc">:</span> <span class="st">"title"</span></span>
-<span id="cb1-79"><a href="#cb1-79" aria-hidden="true" tabindex="-1"></a>            </span>
+<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a><span class="co">          - href: /vitae/vitae.pdf</span></span>
+<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a><span class="co">            target: _blank</span></span>
+<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a><span class="co">            thumbnail: /images/projects/rlogo.png</span></span>
+<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a><span class="co">            title: "Curriculum Vitae"</span></span>
+<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: false</span></span>
+<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: false</span></span>
+<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a><span class="co"># template</span></span>
+<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a>categories<span class="sc">:</span></span>
+<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a>  R</span>
+<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a>template<span class="sc">:</span></span>
+<span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a> <span class="sc">-</span> category<span class="sc">:</span> <span class="st">"R Projects"</span></span>
+<span id="cb1-75"><a href="#cb1-75" aria-hidden="true" tabindex="-1"></a>        description<span class="sc">:</span> <span class="st">"Projects related to R programming."</span></span>
+<span id="cb1-76"><a href="#cb1-76" aria-hidden="true" tabindex="-1"></a>        tiles<span class="sc">:</span></span>
+<span id="cb1-77"><a href="#cb1-77" aria-hidden="true" tabindex="-1"></a>          <span class="sc">-</span> href<span class="sc">:</span> <span class="er">/</span><span class="dv">001</span>_CV.qmd</span>
+<span id="cb1-78"><a href="#cb1-78" aria-hidden="true" tabindex="-1"></a>            thumbnail<span class="sc">:</span> <span class="er">/</span>images<span class="sc">/</span>projects<span class="sc">/</span>celegans.jpg</span>
+<span id="cb1-79"><a href="#cb1-79" aria-hidden="true" tabindex="-1"></a>            title<span class="sc">:</span> <span class="st">"title"</span></span>
 <span id="cb1-80"><a href="#cb1-80" aria-hidden="true" tabindex="-1"></a>            </span>
-<span id="cb1-81"><a href="#cb1-81" aria-hidden="true" tabindex="-1"></a>          <span class="sc">-</span> href<span class="sc">:</span> <span class="er">/</span><span class="dv">006</span>_relational_databases.qmd</span>
-<span id="cb1-82"><a href="#cb1-82" aria-hidden="true" tabindex="-1"></a>            thumbnail<span class="sc">:</span> <span class="er">/</span>images<span class="sc">/</span>projects<span class="sc">/</span><span class="dv">006</span>_relational_databases.png</span>
-<span id="cb1-83"><a href="#cb1-83" aria-hidden="true" tabindex="-1"></a>            title<span class="sc">:</span> <span class="st">"SQL, Relational Databases"</span></span>
-<span id="cb1-84"><a href="#cb1-84" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb1-81"><a href="#cb1-81" aria-hidden="true" tabindex="-1"></a>            </span>
+<span id="cb1-82"><a href="#cb1-82" aria-hidden="true" tabindex="-1"></a>          <span class="sc">-</span> href<span class="sc">:</span> <span class="er">/</span><span class="dv">006</span>_relational_databases.qmd</span>
+<span id="cb1-83"><a href="#cb1-83" aria-hidden="true" tabindex="-1"></a>            thumbnail<span class="sc">:</span> <span class="er">/</span>images<span class="sc">/</span>projects<span class="sc">/</span><span class="dv">006</span>_relational_databases.png</span>
+<span id="cb1-84"><a href="#cb1-84" aria-hidden="true" tabindex="-1"></a>            title<span class="sc">:</span> <span class="st">"SQL, Relational Databases"</span></span>
+<span id="cb1-85"><a href="#cb1-85" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 </code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->

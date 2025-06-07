@@ -1,3 +1,5 @@
+# corejs
+/site_libs/core-js*
 # macOS
 .DS_Store
 # History files
